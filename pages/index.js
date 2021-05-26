@@ -8,19 +8,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <h1>Homepage</h1>
-      <p>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
         Ullamco officia cillum reprehenderit minim. Ullamco ad elit ad aliqua ex
         excepteur enim et aliqua do est. Proident ad elit quis enim do mollit
         minim pariatur.
       </p>
-      <p>
+      <p className={styles.text}>
         Ullamco officia cillum reprehenderit minim. Ullamco ad elit ad aliqua ex
         excepteur enim et aliqua do est. Proident ad elit quis enim do mollit
         minim pariatur.
       </p>
       <Link href="/ninjas">
-        <a>See Ninja Listing</a>
+        <a className={styles.btn}>See Ninja Listing</a>
       </Link>
     </div>
   );
